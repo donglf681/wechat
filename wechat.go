@@ -9,6 +9,7 @@ import (
 	"github.com/trrtly/wechat/js"
 	"github.com/trrtly/wechat/material"
 	"github.com/trrtly/wechat/menu"
+	"github.com/trrtly/wechat/message"
 	"github.com/trrtly/wechat/miniprogram"
 	"github.com/trrtly/wechat/oauth"
 	"github.com/trrtly/wechat/pay"
@@ -110,4 +111,9 @@ func (wc *Wechat) GetQR() *qr.QR {
 // GetMiniProgram 获取小程序的实例
 func (wc *Wechat) GetMiniProgram() *miniprogram.MiniProgram {
 	return miniprogram.NewMiniProgram(wc.Context)
+}
+
+// GetCustomerMsg 返回客服消息实例
+func (wc *Wechat) GetCustomerMsg() *message.CustomerMsg {
+	return message.NewCustomerMsg(wc.Context)
 }
