@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/silenceper/wechat/context"
-	"github.com/silenceper/wechat/util"
+	"github.com/trrtly/wechat/context"
+	"github.com/trrtly/wechat/util"
 )
 
 const (
