@@ -66,7 +66,7 @@ func (cus *CustomerMsg) SendImageMsg(touser string, mediaID string) error {
 		return err
 	}
 
-	return util.DecodeWithCommonError(response, "SetMenu")
+	return util.DecodeWithCommonError(response, "SendImageMsg")
 }
 
 //SendTextMsg 发送文本消息
@@ -90,5 +90,5 @@ func (cus *CustomerMsg) SendTextMsg(touser string, context string) error {
 		return err
 	}
 
-	return util.DecodeWithCommonError(response, "SetMenu")
+	return util.DecodeWithCommonError(response, "SendImageMsg")
 }
